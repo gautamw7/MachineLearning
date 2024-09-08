@@ -1,3 +1,30 @@
+OpenCV, TensorFlow, Keras, Matplotlib, Keras Util, convopoll, Face mask Teslis, 
+
+Right hand, left hand and face.
+Manual features - less points
+256, 256 points. 
+
+do make library while recording   
+-> Mack DIR - Make 10 DIR - start open Cv record video, each 3 seconds, record elements
+-> Close the video
+
+for loop 
+make 10 director, after each video there will be new video
+CV to close Q - Quit 
+and then again, for another word
+
+-> Thank you, I Love you, Hello -- RNN ( manually directly that's why ) \
+
+-> 1st: CNN for label using TensorFlow, enter label name. ( better, automated ) 
+
+-> Training ends
+
+-> Keras - sigmoid relu activation - testing 
+
+-> Finally working 
+
+
+
 Here’s the detailed plan of action for your Indian Sign Language transcription project, broken down into key tasks:
 
 ### 1. **Set Up the Environment**
@@ -71,3 +98,7 @@ Here’s the detailed plan of action for your Indian Sign Language transcription
 11. **Improvement**: Gather feedback and fine-tune the model.
 
 This plan gives you a structured approach to build the project while allowing flexibility in model design and data handling.
+
+
+
+
