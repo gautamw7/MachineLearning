@@ -27,16 +27,16 @@ and then again, for another word
 
 Here’s the detailed plan of action for your Indian Sign Language transcription project, broken down into key tasks:
 
-### 1. **Set Up the Environment**
+### 1. **Set Up the Environment** Done
 - Install all required libraries such as OpenCV, TensorFlow, Keras, Matplotlib, and any utility libraries like Keras Utils for managing models.
 - Verify your environment by running simple tests for OpenCV video capture and TensorFlow model training.
 
-### 2. **Video Capture (OpenCV)**
+### 2. **Video Capture (OpenCV)** Done
 - **Objective**: Capture 3-second clips of hand gestures.
 - **Task**: Use OpenCV to initialize the camera, capture frames at a consistent frame rate (e.g., 30 FPS), and store those frames for further processing.
 - **Details**: Ensure that the resolution of the frames is fixed for consistency in input size to the model. Capture video for exactly 3 seconds (90 frames at 30 FPS) and store it in a list or array for processing.
 
-### 3. **Hand Keypoint Detection (MediaPipe or OpenPose)**
+### 3. **Hand Keypoint Detection (MediaPipe or OpenPose)** 
 - **Objective**: Capture 256 key points (128 for each hand) to represent the gesture.
 - **Task**: Use a hand-tracking library like MediaPipe to detect hand landmarks (21 points per hand). You’ll need to extend this to capture more detailed points or calculate additional features (like velocity, angle, distance between joints).
 - **Details**: For each frame in the video, extract the keypoints for the right and left hands. Store these as (x, y, z) coordinates in a structured format (e.g., NumPy array). Ensure you are consistent across frames and normalize the values (e.g., between 0 and 1) for better model performance.
