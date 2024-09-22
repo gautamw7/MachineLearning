@@ -36,12 +36,12 @@ Here’s the detailed plan of action for your Indian Sign Language transcription
 - **Task**: Use OpenCV to initialize the camera, capture frames at a consistent frame rate (e.g., 30 FPS), and store those frames for further processing.
 - **Details**: Ensure that the resolution of the frames is fixed for consistency in input size to the model. Capture video for exactly 3 seconds (90 frames at 30 FPS) and store it in a list or array for processing.
 
-### 3. **Hand Keypoint Detection (MediaPipe or OpenPose)** 
+### 3. **Hand Keypoint Detection (MediaPipe or OpenPose)** Done
 - **Objective**: Capture 256 key points (128 for each hand) to represent the gesture.
 - **Task**: Use a hand-tracking library like MediaPipe to detect hand landmarks (21 points per hand). You’ll need to extend this to capture more detailed points or calculate additional features (like velocity, angle, distance between joints).
 - **Details**: For each frame in the video, extract the keypoints for the right and left hands. Store these as (x, y, z) coordinates in a structured format (e.g., NumPy array). Ensure you are consistent across frames and normalize the values (e.g., between 0 and 1) for better model performance.
 
-### 4. **Data Preprocessing**
+### 4. **Data Preprocessing** Done
 - **Objective**: Prepare the captured data for training the model.
 - **Task**: Normalize and structure the data into input and output pairs. You will need to resize or pad the number of frames per clip to a fixed length (e.g., 90 frames for 3 seconds at 30 FPS).
 - **Details**: You might need to apply data augmentation (e.g., rotation, mirroring) to expand your dataset and make the model more robust. Ensure that each clip has a corresponding label (e.g., a gesture or word).
